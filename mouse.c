@@ -81,7 +81,7 @@ enum interpret_result interpret(struct mouse_interpreter *interpreter, FILE *fil
   case 'X':
   case 'Y':
   case 'Z':
-    return push_stack(interpreter, character - 0x30);
+    return push_stack(interpreter, character - 0x41);
   case '0':
   case '1':
   case '2':
