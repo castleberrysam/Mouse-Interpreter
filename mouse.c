@@ -196,7 +196,7 @@ enum interpret_result interpret(struct mouse_interpreter *interpreter, FILE *fil
     case '=':
       return push_stack(interpreter, scratch2 = scratch1 ? 1 : 0);
     case '>':
-      return push_stack(interpreter, scratch2 > scratch2 ? 1 : 0);
+      return push_stack(interpreter, scratch2 > scratch1 ? 1 : 0);
     }
   case '[':
     return_val = pop_stack(interpreter, &scratch1);
