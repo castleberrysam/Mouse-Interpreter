@@ -107,19 +107,19 @@ enum interpret_result interpret(struct mouse_interpreter *interpreter, FILE *fil
     
     switch(character) {
     case '+':
-      scratch3 = scratch1 + scratch2;
+      scratch3 = scratch2 + scratch1;
       break;
     case '-':
-      scratch3 = scratch1 - scratch2;
+      scratch3 = scratch2 - scratch1;
       break;
     case '*':
-      scratch3 = scratch1 * scratch2;
+      scratch3 = scratch2 * scratch1;
       break;
     case '/':
-      scratch3 = scratch1 / scratch2;
+      scratch3 = scratch2 / scratch1;
       break;
     case '\\':
-      scratch3 = scratch1 % scratch2;
+      scratch3 = scratch2 % scratch1;
       break;
     }
     
