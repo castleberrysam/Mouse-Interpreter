@@ -1,6 +1,6 @@
 CC=gcc
 
 all:
-	$(CC) -g -o mouse.o mouse.c
+	$(CC) -std=c99 -g -o mouse.o mouse.c
 clean:
 	-rm -f mouse.o
